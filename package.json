@@ -2,7 +2,7 @@
 	"private": true,
 	"name": "character-creator",
 	"license": "MIT",
-	"repository": "tommy-mitchell/character-creator",
+	"repository": "tommy-mitchell/css-for-js-character-creator",
 	"author": {
 		"name": "Tommy Mitchell",
 		"url": "https://tommymitchell.io"
