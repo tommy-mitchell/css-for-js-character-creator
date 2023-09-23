@@ -20,7 +20,6 @@
 		"format": "dprint fmt && xo --fix"
 	},
 	"dependencies": {
-		"clsx": "^2.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
@@ -36,7 +35,6 @@
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-react-hooks": "^4.6.0",
 		"sass": "^1.66.1",
-		"type-fest": "4.2.0",
 		"typescript": "~5.2.2",
 		"vite": "^4.4.9",
 		"vite-plugin-browserslist-useragent": "^0.2.2",
