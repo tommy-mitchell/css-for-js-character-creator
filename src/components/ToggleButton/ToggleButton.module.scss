@@ -25,12 +25,13 @@
 	height: 50px;
 	font-size: 1.25rem;
 	font-weight: 700;
-	border: 2px solid var(--border-toggle-button);
-	background: var(--bg-toggle-button);
+	border: 2px solid;
 	outline-offset: 2px;
-	border-radius: 1px;
+	border-radius: 6px;
 	cursor: pointer;
 	color: var(--text-toggle-button);
+	background: var(--toggle-button-color, var(--bg-toggle-button));
+	border-color: var(--toggle-button-color, var(--border-toggle-button));
 
 	// iOS fix
 	padding: 0;
@@ -55,8 +56,13 @@
 	position: relative;
 }
 
-.ToggleButton[aria-pressed='true'] {
-	background: var(--bg-toggle-button-pressed);
+.ToggleButton[aria-pressed="true"] {
+	background: var(--toggle-button-color, var(--bg-toggle-button-pressed));
 	color: var(--text-toggle-button-pressed);
 	border-color: var(--border-toggle-button-pressed);
+
+	@media (prefers-color-scheme: dark) {
+		--border-toggle-button-pressed: var(--border-toggle-button-pressed-dark, var(--bg-toggle-button-pressed));
+		box-shadow: var(--shadow-toggle-button);
+	}
 }

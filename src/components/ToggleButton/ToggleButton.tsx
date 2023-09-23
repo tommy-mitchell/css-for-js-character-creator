@@ -10,14 +10,16 @@ type ToggleButtonProps = React.ComponentPropsWithoutRef<"button"> & Readonly<{
 }>;
 
 export default function ToggleButton({ label, color, selected: isSelected, children, ...props }: ToggleButtonProps) {
+	const style: Record<string, string> = color
+		? {
+			"--toggle-button-color": color,
+			"--border-toggle-button-pressed-dark": "white",
+			"--shadow-toggle-button": "1px 1px 1px inset black",
+		}
+		: {};
+
 	return (
-		<button
-			type="button"
-			aria-pressed={isSelected}
-			className={styles.toggleButton}
-			style={{ backgroundColor: color }}
-			{...props}
-		>
+		<button type="button" aria-pressed={isSelected} className={styles.toggleButton} style={style} {...props}>
 			<span className="visually-hidden">{label}</span>
 			{children}
 		</button>
