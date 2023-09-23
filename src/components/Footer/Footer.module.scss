@@ -5,3 +5,11 @@
 	color: white;
 	text-align: center;
 }
+
+a {
+	color: inherit;
+
+	&:hover {
+		color: hsl(180deg, 45%, 75%);
+	}
+}
