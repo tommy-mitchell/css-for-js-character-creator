@@ -1,8 +1,8 @@
 .footer {
 	position: relative;
 	padding: 64px;
-	background: hsl(0deg, 0%, 5%);
-	color: white;
+	background: var(--bg-footer);
+	color: var(--text-footer);
 	text-align: center;
 }
 

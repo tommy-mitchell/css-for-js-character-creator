@@ -2,7 +2,7 @@
 	padding: 24px;
 	/* Optical centering */
 	padding-top: 18px;
-	background-color: white;
+	background-color: var(--bg-control-pane);
 	border-radius: 8px;
 	/* HACK: Margin on an outer bound like this is a little gross, but we haven't seen the tools to deal with it yet! */
 	margin-bottom: 32px;
@@ -18,5 +18,5 @@
 	margin-left: 16px;
 	font-size: 0.875rem;
 	font-weight: 400;
-	color: hsl(0deg, 0%, 30%);
+	color: var(--text-secondary);
 }

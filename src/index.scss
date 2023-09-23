@@ -2,8 +2,29 @@ html, body, #root {
 	height: 100%;
 }
 
+:root {
+	--bg-primary: hsl(180deg, 25%, 92%);
+	--bg-secondary: hsl(195deg, 20%, 86%);
+	--bg-control-pane: white;
+	--bg-footer: hsl(0deg, 0%, 5%);
+
+	--text-primary: black;
+	--text-secondary: hsl(0deg, 0%, 30%);
+	--text-footer: hsl(0deg, 0%, 95%);
+
+	@media (prefers-color-scheme: dark) {
+		--bg-primary: hsl(180deg, 5%, 10%);
+		--bg-secondary: hsl(195deg, 5%, 15%);
+		--bg-control-pane: hsl(0deg, 0%, 25%);
+
+		--text-primary: hsl(0deg, 0%, 95%);
+		--text-secondary: hsl(0deg, 0%, 70%);
+	}
+}
+
 body {
-	background-color: hsl(180deg, 25%, 92%);
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
 	margin: 0;
 }
 
