@@ -35,6 +35,8 @@
 }
 
 .characterWrapper {
+	// Allow scrolling when cursor is above character
+	pointer-events: none;
 	position: fixed;
 	min-height: 500px;
 	top: 10%;
