@@ -10,6 +10,7 @@
 
 .header {
 	padding-bottom: 64px;
+	width: 65%;
 }
 
 .title {
@@ -26,11 +27,12 @@
 }
 
 .characterWrapper {
-	@debug “no styles added”;
-	/* no styles added */
+	width: 30%;
+	position: fixed;
+	top: 128px;
+	right: 0;
 }
 
 .controlColumn {
-	@debug “no styles added”;
-	/* no styles added */
+	width: 50%;
 }
