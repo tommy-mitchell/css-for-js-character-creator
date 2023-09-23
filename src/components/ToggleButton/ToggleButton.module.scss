@@ -1,13 +1,36 @@
+:root {
+	--bg-toggle-button: white;
+	--bg-toggle-button-pressed: hsl(0deg, 0%, 5%);
+
+	--border-toggle-button: hsl(0deg, 0%, 5%);
+	--border-toggle-button-pressed: var(--border-toggle-button);
+
+	--text-toggle-button: black;
+	--text-toggle-button-pressed: white;
+
+	@media (prefers-color-scheme: dark) {
+		--bg-toggle-button: hsl(0deg, 0%, 25%);
+		--bg-toggle-button-pressed: hsl(0deg, 0%, 90%);
+
+		--border-toggle-button: hsl(0deg, 0%, 80%);
+		--border-toggle-button-pressed: var(--bg-toggle-button-pressed);
+
+		--text-toggle-button: hsl(0deg, 0%, 95%);
+		--text-toggle-button-pressed: hsl(0deg, 0%, 25%);
+	}
+}
+
 .ToggleButton {
 	width: 50px;
 	height: 50px;
 	font-size: 1.25rem;
 	font-weight: 700;
-	border: 2px solid hsl(0deg, 0%, 5%);
-	background: white;
+	border: 2px solid var(--border-toggle-button);
+	background: var(--bg-toggle-button);
 	outline-offset: 2px;
 	border-radius: 1px;
 	cursor: pointer;
+	color: var(--text-toggle-button);
 
 	/*
 	  HACK: Margin on an outer bound like this is
@@ -29,7 +52,7 @@
 }
 
 .ToggleButton[aria-pressed='true'] {
-	background: hsl(0deg, 0%, 5%);
-	color: white;
-	border-width: 6px;
+	background: var(--bg-toggle-button-pressed);
+	color: var(--text-toggle-button-pressed);
+	border-color: var(--border-toggle-button-pressed);
 }

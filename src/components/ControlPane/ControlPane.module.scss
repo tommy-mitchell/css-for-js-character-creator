@@ -1,4 +1,4 @@
-.controlPane {
+.ControlPane {
 	padding: 24px;
 	/* Optical centering */
 	padding-top: 18px;
@@ -19,4 +19,8 @@
 	font-size: 0.875rem;
 	font-weight: 400;
 	color: var(--text-secondary);
+}
+
+.ButtonRow {
+	margin-top: .33rem;
 }
