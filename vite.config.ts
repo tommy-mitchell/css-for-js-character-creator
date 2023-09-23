@@ -9,6 +9,7 @@ import supportedBrowsers from "vite-plugin-browserslist-useragent";
 import sassDts from "vite-plugin-sass-dts";
 
 export default defineConfig({
+	base: "/css-for-js-character-creator/",
 	css: {
 		modules: {
 			localsConvention: "camelCase",
