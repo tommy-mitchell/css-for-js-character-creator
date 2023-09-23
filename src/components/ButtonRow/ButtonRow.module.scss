@@ -1,4 +1,9 @@
 .ButtonRow {
 	white-space: nowrap;
-	overflow-x: scroll;
+	overflow-x: auto;
+
+	$offset: 20px;
+	margin-inline: -$offset;
+	margin-block-end: -$offset;
+	padding: $offset;
 }

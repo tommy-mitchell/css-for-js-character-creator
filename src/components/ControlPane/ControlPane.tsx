@@ -24,7 +24,7 @@ export default function ControlPane({ title, type, options, currentOption, handl
 
 				<span className={styles.metadata}>{options.length} options</span>
 			</h2>
-			<ButtonRow className={styles.buttonRow}>
+			<ButtonRow>
 				{options.map(({ id, label, color, children }) => (
 					<ToggleButton
 						key={id}
