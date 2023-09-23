@@ -32,6 +32,10 @@
 	cursor: pointer;
 	color: var(--text-toggle-button);
 
+	// iOS fix
+	padding: 0;
+	text-align: center;
+
 	/*
 	  HACK: Margin on an outer bound like this is
 	  a little gross, but we haven't seen the tools

@@ -5,6 +5,10 @@
 	color: var(--text-footer);
 	text-align: center;
 
+	@media (max-width: 700px) {
+		padding: 20px;
+	}
+
 	a {
 		color: inherit;
 

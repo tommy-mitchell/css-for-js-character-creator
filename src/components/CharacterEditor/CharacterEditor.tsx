@@ -31,7 +31,7 @@ export default function CharacterEditor() {
 						on?{" "}
 					</p>
 				</header>
-				<div className={styles.controlColumn}>
+				<div className={styles.controlArea}>
 					<ControlPane title="Bodies" options={bodyOptions} currentOption={body} handleSelectOption={setBody} />
 					<ControlPane title="Heads" options={headOptions} currentOption={head} handleSelectOption={setHead} />
 					<ControlPane title="Faces" options={faceOptions} currentOption={face} handleSelectOption={setFace} />
@@ -55,7 +55,6 @@ export default function CharacterEditor() {
 					/>
 				</div>
 			</MaxWidthWrapper>
-
 			<div className={styles.characterWrapper}>
 				<Character
 					body={body}

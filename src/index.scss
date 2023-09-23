@@ -1,5 +1,6 @@
 html, body, #root {
 	height: 100%;
+	overflow-x: hidden;
 }
 
 :root {
@@ -31,7 +32,6 @@ body {
 	background-attachment: fixed;
 	color: var(--text-primary);
 	margin: 0;
-
 }
 
 *, *:before, *:after {

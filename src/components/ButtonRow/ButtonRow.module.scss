@@ -1,9 +1,18 @@
 .ButtonRow {
+	position: relative;
 	white-space: nowrap;
 	overflow-x: auto;
 
-	$offset: 20px;
-	margin-inline: -$offset;
-	margin-block-end: -$offset;
+	--offset: 20px;
+
+	$offset: var(--offset);
+	$negative_offset: calc(-1 * var(--offset));
+
+	margin-inline: $negative_offset;
+	margin-block-end: $negative_offset;
 	padding: $offset;
+
+	@media (max-width: 700px) {
+		--offset: 16px;
+	}
 }

@@ -6,6 +6,16 @@
 	border-radius: 8px;
 	/* HACK: Margin on an outer bound like this is a little gross, but we haven't seen the tools to deal with it yet! */
 	margin-bottom: 32px;
+
+	@media (max-width: 700px) {
+		width: 100%;
+		display: inline-block;
+		margin-inline-end: 25%;
+
+		&:last-of-type {
+			margin-inline-end: 5%;
+		}
+	}
 }
 
 .title {
